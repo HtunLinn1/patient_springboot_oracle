@@ -24,7 +24,9 @@ Java Extension Pack
 
 ## Windows
 net start OracleServiceXE
+net stop OracleServiceXE
 lsnrctl start
+lsnrctl stop
 
 ## Linux
 systemctl start oracle-xe
