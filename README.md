@@ -18,11 +18,6 @@ A Spring Boot application for managing patient records with Oracle Database inte
 - Oracle Database 21c Express Edition (XE)
 - Oracle SQL Developer (Optional)
 
-## Installation
-1. Clone the repository:
-```bash
-git clone https://github.com/HtunLinn1/patient_springboot_oracle.git
-
 ## vs code extension
 Maven for Java
 Java Extension Pack
@@ -53,6 +48,12 @@ CREATE TABLE patients (
     address1 VARCHAR2(255) NOT NULL,
     address2 VARCHAR2(255) NOT NULL
 );
+
+## Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/HtunLinn1/patient_springboot_oracle.git
+cd patient_springboot_oracle
 
 ## Force update dependencies
 mvn clean install -U
