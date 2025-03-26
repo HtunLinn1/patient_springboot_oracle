@@ -113,7 +113,19 @@ public class PatientController {
                 return "patients/edit";
             }
 
-            patient.setId(id);
+            System.out.println("update patient----");
+            // 変更内容を反映
+            existingPatient.setPatientName(patient.getPatientName());
+            existingPatient.setEmail(patient.getEmail());
+            existingPatient.setPhNo(patient.getPhNo());
+            existingPatient.setAge(patient.getAge());
+            existingPatient.setGender(patient.getGender());
+            existingPatient.setDoctorName(patient.getDoctorName());
+            existingPatient.setAdmissionDate(patient.getAdmissionDate());
+            existingPatient.setZipCode(patient.getZipCode());
+            existingPatient.setPrefecture(patient.getPrefecture());
+            existingPatient.setAddress1(patient.getAddress1());
+            existingPatient.setAddress2(patient.getAddress2());
             patientRepository.save(existingPatient);
             
             return "redirect:/patients/" + id;
